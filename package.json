@@ -1,0 +1,17 @@
+{
+  "name": "andromeda-myth",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "esbuild ./src/index.js --bundle --outfile=./dist/bundle.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "esbuild": "^0.13.13",
+    "gsap": "^3.8.0"
+  }
+}
