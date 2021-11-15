@@ -216,6 +216,7 @@ body {
 }
 
 .section_two {
+  overflow-x: hidden;
   width: 200%;
   background: linear-gradient(
     0deg,
@@ -260,6 +261,7 @@ body {
 
 .section_three {
   width: 100%;
+  overflow-x: hidden;
   background: linear-gradient(
     0deg,
     #9ff1e4 0%,
@@ -268,4 +270,33 @@ body {
     #71c6f3 51.55%,
     #6c9bf6 100%
   );
+  & img {
+    position: absolute;
+    width: 200%;
+  }
+  .mountain1 {
+    left: 20%;
+  }
+
+  .mountain1,
+  .mountain2 {
+    bottom: 5.4rem;
+  }
+
+  .houses1 {
+    bottom: 5.4rem;
+    z-index: 3;
+  }
+
+  .houses2 {
+    bottom: 6rem;
+    z-index: 4;
+    left: 10%;
+  }
+
+  .ground1 {
+    bottom: 0;
+    left: -96%;
+    z-index: 6;
+  }
 }

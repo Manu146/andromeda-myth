@@ -4,8 +4,8 @@ gsap.registerPlugin(ScrollTrigger);
 
 let sections = gsap.utils.toArray(".anim_section");
 
-let scrollTween = gsap.to(sections, {
-  xPercent: -300,
+let scrollTween = gsap.to("#parallax-container", {
+  xPercent: -75,
   ease: "none", // <-- IMPORTANT!
   scrollTrigger: {
     trigger: "#parallax-container",
@@ -16,14 +16,14 @@ let scrollTween = gsap.to(sections, {
   },
 });
 
-/*gsap.to(".section_two .houses1", {
+gsap.to(".section_two .houses1", {
   xPercent: 20,
   ease: "none",
   scrollTrigger: {
     trigger: ".section_two .houses1",
     containerAnimation: scrollTween,
-    start: "left left",
-    end: "right 100%",
+    start: "left 25%",
+    end: "right 50%",
     toggleActions: "play none none reset",
     id: "1",
     scrub: true,
@@ -36,10 +36,10 @@ gsap.to(".section_two .houses2", {
   scrollTrigger: {
     trigger: ".section_two .houses2",
     containerAnimation: scrollTween,
-    start: "left left",
-    end: "right 100%",
+    start: "left 25%",
+    end: "right 50%",
     toggleActions: "play none none reset",
     id: "1",
     scrub: true,
   },
-});*/
+});

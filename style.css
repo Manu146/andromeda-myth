@@ -210,6 +210,7 @@ body {
 }
 
 .section_two {
+  overflow-x: hidden;
   width: 200%;
   background: -webkit-gradient(linear, left bottom, left top, from(#9ff1e4), color-stop(17.47%, #93e6e8), color-stop(48.78%, #74c9f2), color-stop(51.55%, #71c6f3), to(#6c9bf6));
   background: linear-gradient(0deg, #9ff1e4 0%, #93e6e8 17.47%, #74c9f2 48.78%, #71c6f3 51.55%, #6c9bf6 100%);
@@ -248,7 +249,39 @@ body {
 
 .section_three {
   width: 100%;
+  overflow-x: hidden;
   background: -webkit-gradient(linear, left bottom, left top, from(#9ff1e4), color-stop(17.47%, #93e6e8), color-stop(48.78%, #74c9f2), color-stop(51.55%, #71c6f3), to(#6c9bf6));
   background: linear-gradient(0deg, #9ff1e4 0%, #93e6e8 17.47%, #74c9f2 48.78%, #71c6f3 51.55%, #6c9bf6 100%);
+}
+
+.section_three img {
+  position: absolute;
+  width: 200%;
+}
+
+.section_three .mountain1 {
+  left: 20%;
+}
+
+.section_three .mountain1,
+.section_three .mountain2 {
+  bottom: 5.4rem;
+}
+
+.section_three .houses1 {
+  bottom: 5.4rem;
+  z-index: 3;
+}
+
+.section_three .houses2 {
+  bottom: 6rem;
+  z-index: 4;
+  left: 10%;
+}
+
+.section_three .ground1 {
+  bottom: 0;
+  left: -96%;
+  z-index: 6;
 }
 /*# sourceMappingURL=style.css.map */
