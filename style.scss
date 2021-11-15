@@ -82,6 +82,19 @@ body {
 
 #mouse {
   margin-top: 6rem;
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-20px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
 }
 
 .scene_two {
@@ -148,7 +161,7 @@ body {
   }
 }
 
-.section_one {
+.sky {
   height: 100vh;
   width: 100%;
   position: relative;
@@ -212,91 +225,39 @@ body {
   z-index: 5;
   width: 100%;
   height: 6rem;
-  background-color: rgb(178, 181, 120);
+  background: #a09b42;
 }
 
-.section_two {
-  overflow-x: hidden;
+.city,
+.shore {
+  background: linear-gradient(
+    0deg,
+    #9ff1e4 0%,
+    #93e6e8 17.47%,
+    #74c9f2 48.78%,
+    #71c6f3 51.55%,
+    #6c9bf6 100%
+  );
+}
+
+.city {
   width: 200%;
-  background: linear-gradient(
-    0deg,
-    #9ff1e4 0%,
-    #93e6e8 17.47%,
-    #74c9f2 48.78%,
-    #71c6f3 51.55%,
-    #6c9bf6 100%
-  );
-
-  & img {
-    position: absolute;
+  .house1 {
+    z-index: 4;
+    left: 16rem;
   }
 
-  .mountain1 {
-    left: 20%;
-  }
-
-  .mountain1,
-  .mountain2 {
-    bottom: 5.4rem;
-  }
-
-  .houses1 {
-    bottom: 5.4rem;
+  .house2 {
     z-index: 3;
   }
 
-  .houses2 {
+  .house1,
+  .house2 {
+    position: absolute;
     bottom: 6rem;
-    z-index: 4;
-    left: 10%;
-  }
-
-  .ground1 {
-    bottom: 0;
-    left: 0;
-    z-index: 6;
-    width: 100%;
   }
 }
 
-.section_three {
+.shore {
   width: 100%;
-  overflow-x: hidden;
-  background: linear-gradient(
-    0deg,
-    #9ff1e4 0%,
-    #93e6e8 17.47%,
-    #74c9f2 48.78%,
-    #71c6f3 51.55%,
-    #6c9bf6 100%
-  );
-  & img {
-    position: absolute;
-    width: 200%;
-  }
-  .mountain1 {
-    left: 20%;
-  }
-
-  .mountain1,
-  .mountain2 {
-    bottom: 5.4rem;
-  }
-
-  .houses1 {
-    bottom: 5.4rem;
-    z-index: 3;
-  }
-
-  .houses2 {
-    bottom: 6rem;
-    z-index: 4;
-    left: 10%;
-  }
-
-  .ground1 {
-    bottom: 0;
-    left: -96%;
-    z-index: 6;
-  }
 }

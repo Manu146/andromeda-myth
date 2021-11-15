@@ -4,6 +4,17 @@ gsap.registerPlugin(ScrollTrigger);
 
 let sections = gsap.utils.toArray(".anim_section");
 
+let starsTween = gsap.to("#stars", {
+  opacity: 0,
+  ease: "power3.ease",
+  scrollTrigger: {
+    trigger: ".scene_one",
+    scrub: true,
+    end: "60% top",
+    start: "top top",
+  },
+});
+
 let scrollTween = gsap.to("#parallax-container", {
   xPercent: -75,
   ease: "none", // <-- IMPORTANT!
