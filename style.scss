@@ -498,10 +498,17 @@ body {
   }
 
   .ground {
-    width: 25%;
+    width: auto;
+    height: 13%;
     bottom: 0;
-    right: 0;
+    right: 50%;
   }
+
+  .ground2 {
+    width: 50%;
+    left: 50%;
+  }
+
   .sea_bg {
     height: 26%;
     bottom: 0;
@@ -510,7 +517,7 @@ body {
     position: absolute;
     height: 70vh;
     bottom: -10%;
-    right: 20%;
+    left: 40%;
     display: flex;
   }
 
@@ -525,26 +532,92 @@ body {
 
   #text5 {
     width: 20%;
-    left: 50%;
+    left: 25%;
     top: 15%;
   }
 
   .sky {
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: 200%;
     bottom: 100%;
     left: 0;
-    background: linear-gradient(
-      0deg,
-      #00548c 0%,
-      #004887 13.59%,
-      #00297a 37.94%,
-      #002478 41.47%,
-      #001356 59.33%,
-      #000233 75.99%,
-      #000114 100%
-    );
+    .start {
+      width: 100%;
+      height: 50%;
+      background: linear-gradient(
+        0deg,
+        #6c9bf6 0%,
+        #5d91e8 10.82%,
+        #2b70b6 51.75%,
+        #0c5c98 82.75%,
+        #00548c 100%
+      );
+    }
+
+    .end {
+      width: 100%;
+      height: 50%;
+      background: linear-gradient(
+        0deg,
+        #00548c 0%,
+        #004887 13.59%,
+        #00297a 37.94%,
+        #002478 41.47%,
+        #001356 59.33%,
+        #000233 75.99%,
+        #000114 100%
+      );
+
+      .content {
+        width: 50%;
+        height: 100%;
+        margin-left: 50%;
+        background-image: url("./assets/img/scene1/E1_Estrellas.svg");
+        position: relative;
+
+        #text6 {
+          width: 35%;
+          top: 20%;
+          left: 10%;
+        }
+
+        .const_cefeo {
+          width: 8%;
+          height: 20%;
+          right: 12%;
+          top: 6%;
+        }
+
+        .const_andromeda {
+          width: 14%;
+          height: 14%;
+          right: 20%;
+          top: 46%;
+        }
+
+        .const_cassio {
+          width: 8%;
+          height: 13%;
+          right: 44%;
+          top: 23%;
+        }
+
+        .const_cetus {
+          width: 20%;
+          height: 40%;
+          right: 32%;
+          top: 51%;
+        }
+
+        .const_perseo {
+          width: 9%;
+          height: 28%;
+          right: 65%;
+          top: 36%;
+        }
+      }
+    }
   }
 
   .rocks4 {
@@ -561,7 +634,7 @@ body {
     bottom: 18%;
 
     &.rock_4 {
-      left: 55%;
+      left: 22.5%;
     }
   }
 
@@ -570,7 +643,7 @@ body {
     bottom: 10%;
 
     &.rock_4 {
-      left: 25%;
+      left: 12.5%;
     }
   }
 }

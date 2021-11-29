@@ -506,9 +506,15 @@ body {
 }
 
 .shore_2 .ground {
-  width: 25%;
+  width: auto;
+  height: 13%;
   bottom: 0;
-  right: 0;
+  right: 50%;
+}
+
+.shore_2 .ground2 {
+  width: 50%;
+  left: 50%;
 }
 
 .shore_2 .sea_bg {
@@ -520,7 +526,7 @@ body {
   position: absolute;
   height: 70vh;
   bottom: -10%;
-  right: 20%;
+  left: 40%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -538,18 +544,79 @@ body {
 
 .shore_2 #text5 {
   width: 20%;
-  left: 50%;
+  left: 25%;
   top: 15%;
 }
 
 .shore_2 .sky {
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: 200%;
   bottom: 100%;
   left: 0;
+}
+
+.shore_2 .sky .start {
+  width: 100%;
+  height: 50%;
+  background: -webkit-gradient(linear, left bottom, left top, from(#6c9bf6), color-stop(10.82%, #5d91e8), color-stop(51.75%, #2b70b6), color-stop(82.75%, #0c5c98), to(#00548c));
+  background: linear-gradient(0deg, #6c9bf6 0%, #5d91e8 10.82%, #2b70b6 51.75%, #0c5c98 82.75%, #00548c 100%);
+}
+
+.shore_2 .sky .end {
+  width: 100%;
+  height: 50%;
   background: -webkit-gradient(linear, left bottom, left top, from(#00548c), color-stop(13.59%, #004887), color-stop(37.94%, #00297a), color-stop(41.47%, #002478), color-stop(59.33%, #001356), color-stop(75.99%, #000233), to(#000114));
   background: linear-gradient(0deg, #00548c 0%, #004887 13.59%, #00297a 37.94%, #002478 41.47%, #001356 59.33%, #000233 75.99%, #000114 100%);
+}
+
+.shore_2 .sky .end .content {
+  width: 50%;
+  height: 100%;
+  margin-left: 50%;
+  background-image: url("./assets/img/scene1/E1_Estrellas.svg");
+  position: relative;
+}
+
+.shore_2 .sky .end .content #text6 {
+  width: 35%;
+  top: 20%;
+  left: 10%;
+}
+
+.shore_2 .sky .end .content .const_cefeo {
+  width: 8%;
+  height: 20%;
+  right: 12%;
+  top: 6%;
+}
+
+.shore_2 .sky .end .content .const_andromeda {
+  width: 14%;
+  height: 14%;
+  right: 20%;
+  top: 46%;
+}
+
+.shore_2 .sky .end .content .const_cassio {
+  width: 8%;
+  height: 13%;
+  right: 44%;
+  top: 23%;
+}
+
+.shore_2 .sky .end .content .const_cetus {
+  width: 20%;
+  height: 40%;
+  right: 32%;
+  top: 51%;
+}
+
+.shore_2 .sky .end .content .const_perseo {
+  width: 9%;
+  height: 28%;
+  right: 65%;
+  top: 36%;
 }
 
 .shore_2 .rocks4 {
@@ -567,7 +634,7 @@ body {
 }
 
 .shore_2 .rocks3.rock_4 {
-  left: 55%;
+  left: 22.5%;
 }
 
 .shore_2 .rocks2 {
@@ -576,6 +643,6 @@ body {
 }
 
 .shore_2 .rocks2.rock_4 {
-  left: 25%;
+  left: 12.5%;
 }
 /*# sourceMappingURL=style.css.map */
