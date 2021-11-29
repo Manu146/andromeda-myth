@@ -581,34 +581,34 @@ body {
 .shore_2 .sky .end .content #text6 {
   width: 35%;
   top: 20%;
-  left: 10%;
+  left: 15%;
 }
 
 .shore_2 .sky .end .content .const_cefeo {
   width: 8%;
   height: 20%;
-  right: 12%;
-  top: 6%;
+  right: 10%;
+  top: 8%;
 }
 
 .shore_2 .sky .end .content .const_andromeda {
   width: 14%;
   height: 14%;
-  right: 20%;
+  right: 16%;
   top: 46%;
 }
 
 .shore_2 .sky .end .content .const_cassio {
   width: 8%;
   height: 13%;
-  right: 44%;
+  right: 40%;
   top: 23%;
 }
 
 .shore_2 .sky .end .content .const_cetus {
   width: 20%;
   height: 40%;
-  right: 32%;
+  right: 28%;
   top: 51%;
 }
 
