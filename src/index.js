@@ -2,8 +2,6 @@ import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
-let sections = gsap.utils.toArray(".anim_section");
-
 let starsTween = gsap.to("#stars", {
   opacity: 0,
   ease: "power3.ease",
@@ -17,12 +15,11 @@ let starsTween = gsap.to("#stars", {
 
 let scrollTween = gsap.to("#parallax-container", {
   xPercent: -90,
-  ease: "none", // <-- IMPORTANT!
+  ease: "none",
   scrollTrigger: {
     trigger: "#parallax-container",
     pin: true,
     scrub: true,
-    //snap: directionalSnap(1 / (sections.length - 1)),
     end: "+=3000",
   },
 });
@@ -316,9 +313,9 @@ gsap.to("#text5", {
   opacity: 1,
   ease: "power1.inOut",
   scrollTrigger: {
-    trigger: ".shore_2",
+    trigger: "#text5",
     containerAnimation: scrollTween,
-    start: "70% right",
+    start: "left 26%",
     toggleActions: "play none none reset",
     duration: 200,
   },
@@ -328,27 +325,13 @@ gsap.from("#text5", {
   xPercent: -20,
   ease: "power1.inOut",
   scrollTrigger: {
-    trigger: ".shore_2",
+    trigger: "#text5",
     containerAnimation: scrollTween,
-    start: "70% right",
+    start: "left 26%",
     toggleActions: "play none none reset",
     duration: 200,
   },
 });
-
-/*gsap.to(".shore_2", {
-  yPercent: 100,
-  ease: "power1.inOut",
-  scrollTrigger: {
-    trigger: ".shore_2",
-    containerAnimation: scrollTween,
-    start: "right right",
-    end: "top top",
-    toggleActions: "play none none reset",
-    markers: true,
-    scrub: true,
-  },
-});*/
 
 let rocks3 = gsap.utils.toArray(".rocks3");
 let rocks2 = gsap.utils.toArray(".rocks2");
@@ -364,7 +347,6 @@ rocks4.forEach((rock) => {
       start: "right right",
       end: "left left",
       toggleActions: "play none none reset",
-      //markers: true,
       scrub: true,
     },
   });
@@ -380,7 +362,6 @@ rocks3.forEach((rock) => {
       start: "right right",
       end: "left left",
       toggleActions: "play none none reset",
-      //markers: true,
       scrub: true,
     },
   });
@@ -396,7 +377,6 @@ rocks2.forEach((rock) => {
       start: "right right",
       end: "left left",
       toggleActions: "play none none reset",
-      //markers: true,
       scrub: true,
     },
   });
@@ -411,7 +391,6 @@ gsap.from(".rocks1", {
     start: "right right",
     end: "left left",
     toggleActions: "play none none reset",
-    //markers: true,
     scrub: true,
   },
 });
@@ -456,14 +435,57 @@ gsap.to(".nereida3", {
 });
 
 gsap.to("#parallax-container", {
-  yPercent: 100,
+  yPercent: 200,
   ease: "none",
   scrollTrigger: {
     trigger: ".shore_2",
     containerAnimation: scrollTween,
-    start: "85% right",
+    start: "70% right",
     end: "right right",
     toggleActions: "play none none reset",
     scrub: true,
   },
+});
+
+gsap.to("#text6", {
+  opacity: 1,
+  ease: "power1.inOut",
+  scrollTrigger: {
+    trigger: ".shore_2",
+    containerAnimation: scrollTween,
+    start: "right right",
+    toggleActions: "play none none reset",
+    duration: 200,
+  },
+});
+
+gsap.from("#text6", {
+  xPercent: -20,
+  ease: "power1.inOut",
+  scrollTrigger: {
+    trigger: ".shore_2",
+    containerAnimation: scrollTween,
+    start: "right right",
+    toggleActions: "play none none reset",
+    duration: 200,
+  },
+});
+
+let constellations = gsap.utils.toArray(".constellations");
+
+constellations.forEach((c) => {
+  let opacity = Math.random() * (0.5 - 0) + 0;
+  console.log(opacity);
+
+  gsap.from(c, {
+    opacity,
+    scrollTrigger: {
+      trigger: ".shore_2",
+      containerAnimation: scrollTween,
+      start: "right right",
+      toggleActions: "play none none reset",
+      duration: 200,
+      scrub: false,
+    },
+  });
 });
