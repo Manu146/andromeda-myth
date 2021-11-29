@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -222,13 +226,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 400%;
-}
-
-.anim_section {
-  height: 100vh;
-  width: 100%;
-  position: relative;
+  width: 1000%;
 }
 
 .ground2 {
@@ -237,36 +235,363 @@ body {
   left: 0;
   z-index: 5;
   width: 100%;
-  height: 6rem;
+  height: 13%;
   background: #a09b42;
 }
 
 .city,
 .shore {
+  height: 100vh;
+  position: relative;
   background: -webkit-gradient(linear, left bottom, left top, from(#9ff1e4), color-stop(17.47%, #93e6e8), color-stop(48.78%, #74c9f2), color-stop(51.55%, #71c6f3), to(#6c9bf6));
   background: linear-gradient(0deg, #9ff1e4 0%, #93e6e8 17.47%, #74c9f2 48.78%, #71c6f3 51.55%, #6c9bf6 100%);
 }
 
+.sea_bg {
+  position: absolute;
+  bottom: 0rem;
+  height: 26%;
+  width: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(5.55%, #71a7f4), color-stop(87.36%, #5981ff));
+  background: linear-gradient(180deg, #71a7f4 5.55%, #5981ff 87.36%);
+}
+
+.text {
+  opacity: 0;
+  position: absolute;
+  color: white;
+  font-size: 1.5rem;
+  font-family: Cormorant;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 31px;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.25);
+}
+
 .city {
-  width: 200%;
+  width: 300%;
+}
+
+.city .cloud8 {
+  right: 0;
+  top: 20%;
+  width: 55vw;
+  opacity: 90%;
+  position: absolute;
+}
+
+.city .cloud7 {
+  left: 0;
+  top: 25%;
+  width: 25vw;
+  opacity: 90%;
+  position: absolute;
 }
 
 .city .house1 {
   z-index: 4;
   left: 16rem;
+  height: 18%;
+  width: 70%;
 }
 
 .city .house2 {
   z-index: 3;
+  height: 25%;
+  width: 90%;
 }
 
 .city .house1,
 .city .house2 {
   position: absolute;
-  bottom: 6rem;
+  bottom: 13%;
+}
+
+.city .rocks {
+  position: absolute;
+  bottom: 0;
+  z-index: 7;
+  height: 40%;
+  left: 10%;
+}
+
+.city .mountain1 {
+  height: 25%;
+  left: 20%;
+}
+
+.city .mountain2 {
+  height: 30%;
+}
+
+.city .mountain1,
+.city .mountain2 {
+  bottom: 13%;
+  position: absolute;
+  width: 100%;
+}
+
+.city .text {
+  left: 30%;
+  top: 18%;
+  width: 35rem;
+}
+
+.city .andromeda {
+  position: absolute;
+  left: 40%;
+  bottom: -25%;
+  height: 80%;
+  width: auto;
+  z-index: 8;
+}
+
+.city .parents {
+  position: absolute;
+  left: 45%;
+  bottom: 3rem;
+  z-index: 6;
+  height: 50%;
+}
+
+.city .parents .cassiopea,
+.city .parents .cefeo {
+  height: 100%;
 }
 
 .shore {
+  position: relative;
+  width: 400%;
+}
+
+.shore .ground {
+  height: 13%;
+  width: auto;
+  bottom: 0;
+}
+
+.shore .sea_bg {
+  height: 26%;
+  bottom: 0;
+}
+
+.shore #text2 {
+  left: 6rem;
+  top: 20%;
+  width: 50%;
+  max-width: 38rem;
+}
+
+.shore img {
+  position: absolute;
+}
+
+.shore .rocks2 {
+  height: 9%;
+  bottom: 10%;
+}
+
+.shore .rocks2.rock_1 {
+  left: 16%;
+}
+
+.shore .rocks2.rock_2 {
+  left: 40%;
+}
+
+.shore .rocks2.rock_3 {
+  left: 76%;
+}
+
+.shore .rocks3 {
+  height: 15%;
+  bottom: 18%;
+}
+
+.shore .rocks3.rock_1 {
+  left: 6%;
+}
+
+.shore .rocks3.rock_2 {
+  left: 60%;
+}
+
+.shore .rocks3.rock_3 {
+  left: 85%;
+}
+
+.shore .rocks4 {
+  height: 4%;
+  bottom: 24%;
+}
+
+.shore .rocks4.rock_1 {
+  left: 20%;
+}
+
+.shore .rocks4.rock_2 {
+  left: 46%;
+}
+
+.shore .rocks4.rock_3 {
+  left: 82%;
+}
+
+.shore .rocks1 {
+  left: 50%;
+  height: 50%;
+  bottom: -2rem;
+}
+
+.shore .nereida1 {
+  width: 5rem;
+  bottom: 12%;
+  left: 12%;
+}
+
+.shore .nereida2 {
+  width: 3rem;
+  bottom: 18%;
+  left: 14%;
+}
+
+.shore .nereida3 {
+  width: 2rem;
+  bottom: 22%;
+  left: 11.5%;
+}
+
+.shore .rain {
   width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: 0;
+}
+
+.shore .cetus {
+  height: 45%;
+  left: 36%;
+  bottom: -10%;
+}
+
+.shore .perseo {
+  left: 56%;
+  top: 25%;
+  height: 45%;
+}
+
+.shore #text3 {
+  left: 35%;
+  top: 20%;
+  width: 40vw;
+  position: absolute;
+}
+
+.shore #text4 {
+  left: 61.5%;
+  top: 20%;
+  width: 40vw;
+  position: absolute;
+}
+
+.shore .marker1 {
+  width: 1rem;
+  height: 1rem;
+  background-color: red;
+  position: absolute;
+  left: 60%;
+}
+
+.shore .marker2 {
+  width: 1rem;
+  height: 1rem;
+  background-color: blue;
+  position: absolute;
+  left: 80%;
+}
+
+.shore_2 {
+  position: relative;
+  width: 200%;
+  background: -webkit-gradient(linear, left bottom, left top, from(#9ff1e4), color-stop(17.47%, #93e6e8), color-stop(48.78%, #74c9f2), color-stop(51.55%, #71c6f3), to(#6c9bf6));
+  background: linear-gradient(0deg, #9ff1e4 0%, #93e6e8 17.47%, #74c9f2 48.78%, #71c6f3 51.55%, #6c9bf6 100%);
+}
+
+.shore_2 img {
+  position: absolute;
+}
+
+.shore_2 .ground {
+  width: 25%;
+  bottom: 0;
+  right: 0;
+}
+
+.shore_2 .sea_bg {
+  height: 26%;
+  bottom: 0;
+}
+
+.shore_2 .couple {
+  position: absolute;
+  height: 70vh;
+  bottom: -10%;
+  right: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.shore_2 .perseo,
+.shore_2 .andromeda {
+  position: static;
+  height: 100%;
+}
+
+.shore_2 .perseo {
+  margin-left: -1.5rem;
+}
+
+.shore_2 #text5 {
+  width: 20%;
+  left: 50%;
+  top: 15%;
+}
+
+.shore_2 .sky {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: 100%;
+  left: 0;
+  background: -webkit-gradient(linear, left bottom, left top, from(#00548c), color-stop(13.59%, #004887), color-stop(37.94%, #00297a), color-stop(41.47%, #002478), color-stop(59.33%, #001356), color-stop(75.99%, #000233), to(#000114));
+  background: linear-gradient(0deg, #00548c 0%, #004887 13.59%, #00297a 37.94%, #002478 41.47%, #001356 59.33%, #000233 75.99%, #000114 100%);
+}
+
+.shore_2 .rocks4 {
+  height: 4%;
+  bottom: 24%;
+}
+
+.shore_2 .rocks4.rock_4 {
+  left: 0;
+}
+
+.shore_2 .rocks3 {
+  height: 15%;
+  bottom: 18%;
+}
+
+.shore_2 .rocks3.rock_4 {
+  left: 55%;
+}
+
+.shore_2 .rocks2 {
+  height: 9%;
+  bottom: 10%;
+}
+
+.shore_2 .rocks2.rock_4 {
+  left: 25%;
 }
 /*# sourceMappingURL=style.css.map */
