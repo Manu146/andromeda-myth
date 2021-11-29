@@ -5021,7 +5021,6 @@
 
   // src/index.js
   gsapWithCSS.registerPlugin(ScrollTrigger);
-  var sections = gsapWithCSS.utils.toArray(".anim_section");
   var starsTween = gsapWithCSS.to("#stars", {
     opacity: 0,
     ease: "power3.ease",
@@ -5271,9 +5270,9 @@
     opacity: 1,
     ease: "power1.inOut",
     scrollTrigger: {
-      trigger: ".shore_2",
+      trigger: "#text5",
       containerAnimation: scrollTween,
-      start: "70% right",
+      start: "left 26%",
       toggleActions: "play none none reset",
       duration: 200
     }
@@ -5282,9 +5281,9 @@
     xPercent: -20,
     ease: "power1.inOut",
     scrollTrigger: {
-      trigger: ".shore_2",
+      trigger: "#text5",
       containerAnimation: scrollTween,
-      start: "70% right",
+      start: "left 26%",
       toggleActions: "play none none reset",
       duration: 200
     }
@@ -5383,17 +5382,58 @@
     }
   });
   gsapWithCSS.to("#parallax-container", {
-    yPercent: 100,
+    yPercent: 200,
     ease: "none",
     scrollTrigger: {
       trigger: ".shore_2",
       containerAnimation: scrollTween,
+<<<<<<< HEAD
       start: "85% right",
-      end: "right right",
-      toggleActions: "play none none reset",
+=======
+      start: "70% right",
       scrub: true
+  });
+<<<<<<< HEAD
+=======
+  gsapWithCSS.to("#text6", {
+    opacity: 1,
+    ease: "power1.inOut",
+    scrollTrigger: {
+      trigger: ".shore_2",
+      containerAnimation: scrollTween,
+      start: "right right",
+      toggleActions: "play none none reset",
+      duration: 200
     }
   });
+  gsapWithCSS.from("#text6", {
+    xPercent: -20,
+    ease: "power1.inOut",
+    scrollTrigger: {
+      trigger: ".shore_2",
+      containerAnimation: scrollTween,
+      start: "right right",
+      toggleActions: "play none none reset",
+      duration: 200
+    }
+  });
+  var constellations = gsapWithCSS.utils.toArray(".constellations");
+  constellations.forEach((c) => {
+    let opacity = Math.random() * (0.5 - 0) + 0;
+    console.log(opacity);
+    gsapWithCSS.from(c, {
+      opacity,
+      scrollTrigger: {
+        trigger: ".shore_2",
+        containerAnimation: scrollTween,
+        start: "right right",
+        toggleActions: "play none none reset",
+        duration: 200,
+        scrub: false
+      }
+    });
+  });
+>>>>>>> main
 })();
 /*!
  * CSSPlugin 3.8.0
