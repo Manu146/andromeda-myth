@@ -494,22 +494,6 @@ body {
   position: absolute;
 }
 
-.shore .marker1 {
-  width: 1rem;
-  height: 1rem;
-  background-color: red;
-  position: absolute;
-  left: 60%;
-}
-
-.shore .marker2 {
-  width: 1rem;
-  height: 1rem;
-  background-color: blue;
-  position: absolute;
-  left: 80%;
-}
-
 .shore_2 {
   position: relative;
   width: 200%;
