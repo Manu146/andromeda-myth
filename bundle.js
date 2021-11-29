@@ -5387,14 +5387,12 @@
     scrollTrigger: {
       trigger: ".shore_2",
       containerAnimation: scrollTween,
-<<<<<<< HEAD
-      start: "85% right",
-=======
       start: "70% right",
+      end: "right right",
+      toggleActions: "play none none reset",
       scrub: true
+    }
   });
-<<<<<<< HEAD
-=======
   gsapWithCSS.to("#text6", {
     opacity: 1,
     ease: "power1.inOut",
@@ -5433,7 +5431,6 @@
       }
     });
   });
->>>>>>> main
 })();
 /*!
  * CSSPlugin 3.8.0
