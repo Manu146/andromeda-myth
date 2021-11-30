@@ -2,7 +2,7 @@ import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
-let starsTween = gsap.to("#stars", {
+gsap.to("#stars", {
   opacity: 0,
   ease: "power3.ease",
   scrollTrigger: {
@@ -10,6 +10,83 @@ let starsTween = gsap.to("#stars", {
     scrub: true,
     end: "60% top",
     start: "top top",
+  },
+});
+
+gsap.from(".cloud6", {
+  xPercent: 50,
+  ease: "none",
+  scrollTrigger: {
+    trigger: ".scene_two",
+    scrub: true,
+    start: "top bottom",
+    end: "30% top",
+  },
+});
+
+gsap.from(".cloud3", {
+  xPercent: 40,
+  ease: "none",
+  scrollTrigger: {
+    trigger: ".scene_two",
+    scrub: true,
+    start: "top 20%",
+    end: "center top",
+  },
+});
+
+gsap.from(".cloud4", {
+  xPercent: -25,
+  ease: "none",
+  scrollTrigger: {
+    trigger: ".scene_two",
+    scrub: true,
+    start: "top 30%",
+    end: "60% top",
+  },
+});
+
+gsap.to(".cloud1", {
+  xPercent: 40,
+  ease: "none",
+  scrollTrigger: {
+    trigger: ".scene_two",
+    scrub: true,
+    start: "top 30%",
+    end: "60% top",
+  },
+});
+
+gsap.from(".cloud2", {
+  xPercent: 80,
+  ease: "none",
+  scrollTrigger: {
+    trigger: ".scene_two",
+    scrub: true,
+    start: "top 40%",
+    end: "55% top",
+  },
+});
+
+gsap.from(".cloud7", {
+  xPercent: -40,
+  ease: "none",
+  scrollTrigger: {
+    trigger: ".scene_two",
+    scrub: true,
+    start: "top top",
+    end: "75% top",
+  },
+});
+
+gsap.from(".cloud8", {
+  xPercent: 60,
+  ease: "none",
+  scrollTrigger: {
+    trigger: ".scene_two",
+    scrub: true,
+    start: "top top",
+    end: "75% top",
   },
 });
 

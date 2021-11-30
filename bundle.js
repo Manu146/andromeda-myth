@@ -5021,7 +5021,7 @@
 
   // src/index.js
   gsapWithCSS.registerPlugin(ScrollTrigger);
-  var starsTween = gsapWithCSS.to("#stars", {
+  gsapWithCSS.to("#stars", {
     opacity: 0,
     ease: "power3.ease",
     scrollTrigger: {
@@ -5029,6 +5029,76 @@
       scrub: true,
       end: "60% top",
       start: "top top"
+    }
+  });
+  gsapWithCSS.from(".cloud6", {
+    xPercent: 50,
+    ease: "none",
+    scrollTrigger: {
+      trigger: ".scene_two",
+      scrub: true,
+      start: "top bottom",
+      end: "30% top"
+    }
+  });
+  gsapWithCSS.from(".cloud3", {
+    xPercent: 40,
+    ease: "none",
+    scrollTrigger: {
+      trigger: ".scene_two",
+      scrub: true,
+      start: "top 20%",
+      end: "center top"
+    }
+  });
+  gsapWithCSS.from(".cloud4", {
+    xPercent: -25,
+    ease: "none",
+    scrollTrigger: {
+      trigger: ".scene_two",
+      scrub: true,
+      start: "top 30%",
+      end: "60% top"
+    }
+  });
+  gsapWithCSS.to(".cloud1", {
+    xPercent: 40,
+    ease: "none",
+    scrollTrigger: {
+      trigger: ".scene_two",
+      scrub: true,
+      start: "top 30%",
+      end: "60% top"
+    }
+  });
+  gsapWithCSS.from(".cloud2", {
+    xPercent: 80,
+    ease: "none",
+    scrollTrigger: {
+      trigger: ".scene_two",
+      scrub: true,
+      start: "top 40%",
+      end: "55% top"
+    }
+  });
+  gsapWithCSS.from(".cloud7", {
+    xPercent: -40,
+    ease: "none",
+    scrollTrigger: {
+      trigger: ".scene_two",
+      scrub: true,
+      start: "top top",
+      end: "75% top"
+    }
+  });
+  gsapWithCSS.from(".cloud8", {
+    xPercent: 60,
+    ease: "none",
+    scrollTrigger: {
+      trigger: ".scene_two",
+      scrub: true,
+      start: "top top",
+      end: "75% top"
     }
   });
   var scrollTween = gsapWithCSS.to("#parallax-container", {
