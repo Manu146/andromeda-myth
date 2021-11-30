@@ -88,7 +88,7 @@ body {
 }
 
 #mouse {
-  margin-top: 6rem;
+  margin-top: 12rem;
   -webkit-animation: float 4s ease-in-out infinite;
           animation: float 4s ease-in-out infinite;
 }
@@ -254,6 +254,7 @@ body {
   width: 100%;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(5.55%, #71a7f4), color-stop(87.36%, #5981ff));
   background: linear-gradient(180deg, #71a7f4 5.55%, #5981ff 87.36%);
+  margin-left: -1px;
 }
 
 .text {
@@ -362,6 +363,7 @@ body {
 .shore {
   position: relative;
   width: 400%;
+  margin-left: -1px;
 }
 
 .shore .ground {
@@ -497,6 +499,7 @@ body {
 .shore_2 {
   position: relative;
   width: 200%;
+  margin-left: -1px;
   background: -webkit-gradient(linear, left bottom, left top, from(#9ff1e4), color-stop(17.47%, #93e6e8), color-stop(48.78%, #74c9f2), color-stop(51.55%, #71c6f3), to(#6c9bf6));
   background: linear-gradient(0deg, #9ff1e4 0%, #93e6e8 17.47%, #74c9f2 48.78%, #71c6f3 51.55%, #6c9bf6 100%);
 }
@@ -548,29 +551,30 @@ body {
   top: 15%;
 }
 
-.shore_2 .sky {
+.shore_2 .sky_2 {
   position: absolute;
   width: 100%;
-  height: 200%;
-  bottom: 100%;
+  height: calc(200% + 1px);
+  bottom: calc(100% - 1px);
   left: 0;
 }
 
-.shore_2 .sky .start {
+.shore_2 .sky_2 .start {
   width: 100%;
   height: 50%;
   background: -webkit-gradient(linear, left bottom, left top, from(#6c9bf6), color-stop(10.82%, #5d91e8), color-stop(51.75%, #2b70b6), color-stop(82.75%, #0c5c98), to(#00548c));
   background: linear-gradient(0deg, #6c9bf6 0%, #5d91e8 10.82%, #2b70b6 51.75%, #0c5c98 82.75%, #00548c 100%);
 }
 
-.shore_2 .sky .end {
+.shore_2 .sky_2 .end {
   width: 100%;
   height: 50%;
+  margin-bottom: -1px;
   background: -webkit-gradient(linear, left bottom, left top, from(#00548c), color-stop(13.59%, #004887), color-stop(37.94%, #00297a), color-stop(41.47%, #002478), color-stop(59.33%, #001356), color-stop(75.99%, #000233), to(#000114));
   background: linear-gradient(0deg, #00548c 0%, #004887 13.59%, #00297a 37.94%, #002478 41.47%, #001356 59.33%, #000233 75.99%, #000114 100%);
 }
 
-.shore_2 .sky .end .content {
+.shore_2 .sky_2 .end .content {
   width: 50%;
   height: 100%;
   margin-left: 50%;
@@ -578,41 +582,41 @@ body {
   position: relative;
 }
 
-.shore_2 .sky .end .content #text6 {
+.shore_2 .sky_2 .end .content #text6 {
   width: 35%;
   top: 20%;
   left: 15%;
 }
 
-.shore_2 .sky .end .content .const_cefeo {
+.shore_2 .sky_2 .end .content .const_cefeo {
   width: 8%;
   height: 20%;
   right: 10%;
   top: 8%;
 }
 
-.shore_2 .sky .end .content .const_andromeda {
+.shore_2 .sky_2 .end .content .const_andromeda {
   width: 14%;
   height: 14%;
   right: 16%;
   top: 46%;
 }
 
-.shore_2 .sky .end .content .const_cassio {
+.shore_2 .sky_2 .end .content .const_cassio {
   width: 8%;
   height: 13%;
   right: 40%;
   top: 23%;
 }
 
-.shore_2 .sky .end .content .const_cetus {
+.shore_2 .sky_2 .end .content .const_cetus {
   width: 20%;
   height: 40%;
   right: 28%;
   top: 51%;
 }
 
-.shore_2 .sky .end .content .const_perseo {
+.shore_2 .sky_2 .end .content .const_perseo {
   width: 9%;
   height: 28%;
   right: 65%;
