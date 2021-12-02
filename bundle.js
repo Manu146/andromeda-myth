@@ -5163,7 +5163,7 @@
     xPercent: 6,
     ease: "none",
     scrollTrigger: {
-      trigger: ".rocks",
+      trigger: ".city",
       containerAnimation: scrollTween,
       start: "left left",
       end: "right right",
@@ -5177,7 +5177,7 @@
     scrollTrigger: {
       trigger: "#text1",
       containerAnimation: scrollTween,
-      start: "left 40%",
+      start: "left 30%",
       toggleActions: "play none none reset",
       duration: 200
     }
@@ -5188,7 +5188,7 @@
     scrollTrigger: {
       trigger: "#text1",
       containerAnimation: scrollTween,
-      start: "left 40%",
+      start: "left 30%",
       toggleActions: "play none none reset",
       duration: 200
     }
@@ -5221,8 +5221,8 @@
     scrollTrigger: {
       trigger: ".shore",
       containerAnimation: scrollTween,
-      start: "20% left",
-      end: "40% left",
+      start: "10% left",
+      end: "30% left",
       toggleActions: "play none none reset",
       scrub: true
     }
@@ -5235,7 +5235,7 @@
       trigger: ".shore",
       containerAnimation: scrollTween,
       start: "60% left",
-      end: "80% left",
+      end: "70% left",
       toggleActions: "play none none reset",
       scrub: true
     }
@@ -5248,8 +5248,8 @@
     scrollTrigger: {
       trigger: ".shore",
       containerAnimation: scrollTween,
-      start: "16% left",
-      end: "40% left",
+      start: "10% left",
+      end: "30% left",
       toggleActions: "play none none reset",
       scrub: true
     }
@@ -5262,7 +5262,7 @@
       trigger: ".shore",
       containerAnimation: scrollTween,
       start: "60% left",
-      end: "80% left",
+      end: "70% left",
       toggleActions: "play none none reset",
       scrub: true
     }
@@ -5273,8 +5273,8 @@
     scrollTrigger: {
       trigger: ".rain",
       containerAnimation: scrollTween,
-      start: "16% left",
-      end: "50% left",
+      start: "10% left",
+      end: "35% left",
       toggleActions: "play none none reset",
       scrub: true
     }
@@ -5286,8 +5286,8 @@
     scrollTrigger: {
       trigger: ".rain",
       containerAnimation: scrollTween,
-      start: "50% left",
-      end: "80% left",
+      start: "60% left",
+      end: "70% left",
       toggleActions: "play none none reset",
       scrub: true
     }
@@ -5404,7 +5404,7 @@
     });
   });
   gsapWithCSS.from(".rocks1", {
-    xPercent: -70,
+    xPercent: -40,
     ease: "none",
     scrollTrigger: {
       trigger: ".rocks1",
@@ -5457,7 +5457,7 @@
     scrollTrigger: {
       trigger: ".shore_2",
       containerAnimation: scrollTween,
-      start: "70% right",
+      start: "30% right",
       end: "right right",
       toggleActions: "play none none reset",
       scrub: true
