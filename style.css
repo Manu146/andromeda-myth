@@ -633,31 +633,4 @@ body {
   right: 65%;
   top: 36%;
 }
-
-.shore_2 .rocks4 {
-  height: 4%;
-  bottom: 24%;
-}
-
-.shore_2 .rocks4.rock_4 {
-  left: 0;
-}
-
-.shore_2 .rocks3 {
-  height: 15%;
-  bottom: 18%;
-}
-
-.shore_2 .rocks3.rock_4 {
-  left: 22.5%;
-}
-
-.shore_2 .rocks2 {
-  height: 9%;
-  bottom: 10%;
-}
-
-.shore_2 .rocks2.rock_4 {
-  left: 12.5%;
-}
 /*# sourceMappingURL=style.css.map */
