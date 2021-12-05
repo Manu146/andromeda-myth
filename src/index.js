@@ -91,7 +91,7 @@ gsap.from(".cloud8", {
 });
 
 let scrollTween = gsap.to("#parallax-container", {
-  xPercent: -90,
+  xPercent: -88.24,
   ease: "none",
   scrollTrigger: {
     trigger: "#parallax-container",
@@ -253,11 +253,11 @@ gsap.fromTo(
   ".shore",
   {
     background:
-      "linear-gradient(0deg,#9ff1e4 0%,#93e6e8 17.47%,#74c9f2 48.78%,#71c6f3 51.55%,#6c9bf6 100%)",
+      "linear-gradient(0deg, #9ff1e4 0%, #93e6e8 17.47%, #74c9f2 48.78%, #71c6f3 51.55%, #6c9bf6 100%)",
   },
   {
     background:
-      "linear-gradient(0deg, #DBE1ED 23.37%, #A6BCC9 34.39%, #717BAA 81.39%, #5C619E 100%)",
+      "linear-gradient(0deg, rgba(219,225,237,1) 23%, rgba(166,188,201,1) 34%, rgba(137,152,184,1) 44%, rgba(113,123,170,1) 52%, rgba(92,97,158,1) 100%)",
     ease: "none",
     scrollTrigger: {
       trigger: ".shore",
@@ -492,7 +492,7 @@ gsap.to("#parallax-container", {
     trigger: ".shore_2",
     containerAnimation: scrollTween,
     start: "30% right",
-    end: "right right",
+    end: "80% right",
     toggleActions: "play none none reset",
     scrub: true,
   },
@@ -525,18 +525,17 @@ gsap.from("#text6", {
 let constellations = gsap.utils.toArray(".constellations");
 
 constellations.forEach((c) => {
-  let opacity = Math.random() * (0.5 - 0) + 0;
-  console.log(opacity);
-
   gsap.from(c, {
-    opacity,
     scrollTrigger: {
-      trigger: ".shore_2",
+      trigger: c,
       containerAnimation: scrollTween,
-      start: "right right",
+      start: "left 70%",
       toggleActions: "play none none reset",
-      duration: 200,
       scrub: false,
+      toggleClass: {
+        targets: c,
+        className: "active",
+      },
     },
   });
 });

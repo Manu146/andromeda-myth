@@ -213,7 +213,7 @@ body {
 
 #parallax-container {
   display: flex;
-  width: 1000%;
+  width: 850%;
 }
 
 .ground2 {
@@ -351,7 +351,7 @@ body {
 
 .shore {
   position: relative;
-  width: 200%;
+  width: 250%;
   margin-left: -1px;
   .ground {
     height: 13%;
@@ -470,7 +470,7 @@ body {
 
   #text3 {
     left: 28%;
-    top: 20%;
+    top: 18%;
     width: 40vw;
     position: absolute;
   }
@@ -485,7 +485,7 @@ body {
 
 .shore_2 {
   position: relative;
-  width: 100%;
+  width: 200%;
   margin-left: -1px;
   background: linear-gradient(
     0deg,
@@ -577,55 +577,79 @@ body {
       );
 
       .content {
-        width: 25%;
+        width: 50%;
         height: 100%;
-        margin-left: 75%;
+        margin-left: 50%;
         background-image: url("./assets/img/scene1/E1_Estrellas.svg");
         position: relative;
 
         #text6 {
-          width: 35%;
+          width: 12%;
           top: 20%;
-          left: 15%;
+          right: 22%;
         }
 
         img {
           position: absolute;
         }
 
+        .constellations {
+          opacity: 0;
+        }
+
         .const_cefeo {
           width: 8%;
           height: 20%;
-          right: 10%;
+          right: 3.5%;
           top: 8%;
+          &.active {
+            opacity: 1;
+            transition: opacity 0.2s ease-in;
+          }
         }
 
         .const_andromeda {
           width: 14%;
           height: 14%;
-          right: 16%;
+          right: 6%;
           top: 46%;
+          &.active {
+            opacity: 1;
+            transition: opacity 0.7s ease-in;
+          }
         }
 
         .const_cassio {
           width: 8%;
           height: 13%;
-          right: 40%;
+          right: 12%;
           top: 23%;
+          &.active {
+            opacity: 1;
+            transition: opacity 0.4s ease-in;
+          }
         }
 
         .const_cetus {
           width: 20%;
           height: 40%;
-          right: 28%;
+          right: 12%;
           top: 51%;
+          &.active {
+            opacity: 1;
+            transition: opacity 1s ease-in;
+          }
         }
 
         .const_perseo {
           width: 9%;
           height: 28%;
-          right: 65%;
-          top: 36%;
+          right: 27%;
+          top: 50%;
+          &.active {
+            opacity: 1;
+            transition: opacity 0.8s ease-in;
+          }
         }
       }
     }
