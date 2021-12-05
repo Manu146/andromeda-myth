@@ -5102,7 +5102,7 @@
     }
   });
   var scrollTween = gsapWithCSS.to("#parallax-container", {
-    xPercent: -90,
+    xPercent: -88.24,
     ease: "none",
     scrollTrigger: {
       trigger: "#parallax-container",
@@ -5458,7 +5458,7 @@
       trigger: ".shore_2",
       containerAnimation: scrollTween,
       start: "30% right",
-      end: "right right",
+      end: "80% right",
       toggleActions: "play none none reset",
       scrub: true
     }
@@ -5487,17 +5487,17 @@
   });
   var constellations = gsapWithCSS.utils.toArray(".constellations");
   constellations.forEach((c) => {
-    let opacity = Math.random() * (0.5 - 0) + 0;
-    console.log(opacity);
     gsapWithCSS.from(c, {
-      opacity,
       scrollTrigger: {
-        trigger: ".shore_2",
+        trigger: c,
         containerAnimation: scrollTween,
-        start: "right right",
+        start: "left 70%",
         toggleActions: "play none none reset",
-        duration: 200,
-        scrub: false
+        scrub: false,
+        toggleClass: {
+          targets: c,
+          className: "active"
+        }
       }
     });
   });

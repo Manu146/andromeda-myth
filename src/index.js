@@ -91,7 +91,7 @@ gsap.from(".cloud8", {
 });
 
 let scrollTween = gsap.to("#parallax-container", {
-  xPercent: -90,
+  xPercent: -88.24,
   ease: "none",
   scrollTrigger: {
     trigger: "#parallax-container",
@@ -492,7 +492,7 @@ gsap.to("#parallax-container", {
     trigger: ".shore_2",
     containerAnimation: scrollTween,
     start: "30% right",
-    end: "right right",
+    end: "80% right",
     toggleActions: "play none none reset",
     scrub: true,
   },
@@ -525,18 +525,17 @@ gsap.from("#text6", {
 let constellations = gsap.utils.toArray(".constellations");
 
 constellations.forEach((c) => {
-  let opacity = Math.random() * (0.5 - 0) + 0;
-  console.log(opacity);
-
   gsap.from(c, {
-    opacity,
     scrollTrigger: {
-      trigger: ".shore_2",
+      trigger: c,
       containerAnimation: scrollTween,
-      start: "right right",
+      start: "left 70%",
       toggleActions: "play none none reset",
-      duration: 200,
       scrub: false,
+      toggleClass: {
+        targets: c,
+        className: "active",
+      },
     },
   });
 });

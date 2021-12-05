@@ -226,7 +226,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 1000%;
+  width: 850%;
 }
 
 .ground2 {
@@ -362,7 +362,7 @@ body {
 
 .shore {
   position: relative;
-  width: 200%;
+  width: 250%;
   margin-left: -1px;
 }
 
@@ -498,7 +498,7 @@ body {
 
 .shore_2 {
   position: relative;
-  width: 100%;
+  width: 200%;
   margin-left: -1px;
   background: -webkit-gradient(linear, left bottom, left top, from(#9ff1e4), color-stop(17.47%, #93e6e8), color-stop(48.78%, #74c9f2), color-stop(51.55%, #71c6f3), to(#6c9bf6));
   background: linear-gradient(0deg, #9ff1e4 0%, #93e6e8 17.47%, #74c9f2 48.78%, #71c6f3 51.55%, #6c9bf6 100%);
@@ -582,56 +582,90 @@ body {
 }
 
 .shore_2 .sky_2 .end .content {
-  width: 25%;
+  width: 50%;
   height: 100%;
-  margin-left: 75%;
+  margin-left: 50%;
   background-image: url("./assets/img/scene1/E1_Estrellas.svg");
   position: relative;
 }
 
 .shore_2 .sky_2 .end .content #text6 {
-  width: 35%;
+  width: 12%;
   top: 20%;
-  left: 15%;
+  right: 15%;
 }
 
 .shore_2 .sky_2 .end .content img {
   position: absolute;
 }
 
+.shore_2 .sky_2 .end .content .constellations {
+  opacity: 0;
+}
+
 .shore_2 .sky_2 .end .content .const_cefeo {
   width: 8%;
   height: 20%;
-  right: 10%;
+  right: 3.5%;
   top: 8%;
+}
+
+.shore_2 .sky_2 .end .content .const_cefeo.active {
+  opacity: 1;
+  -webkit-transition: opacity 0.2s ease-in;
+  transition: opacity 0.2s ease-in;
 }
 
 .shore_2 .sky_2 .end .content .const_andromeda {
   width: 14%;
   height: 14%;
-  right: 16%;
+  right: 6%;
   top: 46%;
+}
+
+.shore_2 .sky_2 .end .content .const_andromeda.active {
+  opacity: 1;
+  -webkit-transition: opacity 0.7s ease-in;
+  transition: opacity 0.7s ease-in;
 }
 
 .shore_2 .sky_2 .end .content .const_cassio {
   width: 8%;
   height: 13%;
-  right: 40%;
+  right: 12%;
   top: 23%;
+}
+
+.shore_2 .sky_2 .end .content .const_cassio.active {
+  opacity: 1;
+  -webkit-transition: opacity 0.4s ease-in;
+  transition: opacity 0.4s ease-in;
 }
 
 .shore_2 .sky_2 .end .content .const_cetus {
   width: 20%;
   height: 40%;
-  right: 28%;
+  right: 12%;
   top: 51%;
+}
+
+.shore_2 .sky_2 .end .content .const_cetus.active {
+  opacity: 1;
+  -webkit-transition: opacity 1s ease-in;
+  transition: opacity 1s ease-in;
 }
 
 .shore_2 .sky_2 .end .content .const_perseo {
   width: 9%;
   height: 28%;
-  right: 65%;
-  top: 36%;
+  right: 27%;
+  top: 50%;
+}
+
+.shore_2 .sky_2 .end .content .const_perseo.active {
+  opacity: 1;
+  -webkit-transition: opacity 0.8s ease-in;
+  transition: opacity 0.8s ease-in;
 }
 
 .shore_2 .rocks4 {
