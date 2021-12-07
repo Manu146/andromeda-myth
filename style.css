@@ -88,7 +88,11 @@ body {
 }
 
 #mouse {
-  margin-top: 12rem;
+  position: absolute;
+  bottom: 15%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   -webkit-animation: float 4s ease-in-out infinite;
           animation: float 4s ease-in-out infinite;
 }
@@ -380,8 +384,7 @@ body {
 .shore #text2 {
   left: 6rem;
   top: 20%;
-  width: 50%;
-  max-width: 38rem;
+  width: 55vw;
 }
 
 .shore img {
@@ -485,7 +488,7 @@ body {
 .shore #text3 {
   left: 28%;
   top: 18%;
-  width: 40vw;
+  width: 45vw;
   position: absolute;
 }
 
